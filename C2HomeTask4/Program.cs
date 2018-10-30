@@ -34,7 +34,6 @@ namespace Ex2
         static void Main(string[] args)
         {
             Random rnd = new Random();
-
             #region для целочисленной коллекции 
             //List<int> elements = new List<int>();
             //for (int i = 0; i < 100; i++)
@@ -59,7 +58,6 @@ namespace Ex2
             //foreach (var b in elements.CountElements())
             //    Console.WriteLine($"{b.Key,5} {b.Value,10}");
             #endregion
-
             #region используя Linq
             List<int> LinqEl = new List<int>();
             for (int i = 0; i < 100; i++)
@@ -78,7 +76,6 @@ namespace Ex2
                 Console.WriteLine($"{a.gKey,5}{a.gСountEl,10}");
             #endregion
             Console.Read();
-
         }
     }
 }
