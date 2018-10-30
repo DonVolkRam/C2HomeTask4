@@ -10,13 +10,26 @@ namespace Ex1
     /// Создан тут исключительно для этого задания
     /// </summary>
     class Asteroid
-    {
-        int Size;
+    {       
     }
     class Program
     {
         static void Main(string[] args)
         {
+            List<Asteroid> asteroids = new List<Asteroid>();
+            //создание коллекции элементов
+            for (int i = 0; i < 10; i++)            
+                asteroids.Add(new Asteroid());
+            //фиксация количества элементов
+            int size = asteroids.Count;
+            //эмитация случайного удаления элементов 
+            while ( asteroids.Count!=0)
+            asteroids.RemoveAt(0);
+            //созднание прежднего количества элементов плюс один
+            for (int i = 0; i < size+1; i++)
+                asteroids.Add(new Asteroid());
+            //проверка что больше на 1 прежднего
+            int chk = asteroids.Count;
         }
     }
 }
